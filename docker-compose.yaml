@@ -28,8 +28,8 @@ services:
   postgres:
     image: postgres:15-alpine
     environment:
-      POSTGRES_DB: ${DB_NAME:-postgres}
-      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_DB: ${DB_NAME:-retmix}
+      POSTGRES_USER: ${DB_USER:-retmix}
       POSTGRES_PASSWORD: ${DB_PASSWORD:-12345}
     volumes:
       - dbData:/var/lib/postgres
