@@ -9,7 +9,7 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ./laravel:/var/www/html
+      - ./laravel:/var/www
     networks:
       - retmix
 

@@ -14,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("main", "App\Http\Controllers\Head@head");
-
-Route::fallback(function (){
-   abort(404, "А?");
-});
+Route::get("main", "App\Http\Controllers\RegistrationController@head");
+Route::post("registration", "App\Http\Controllers\RegistrationController@resgistration");
+Route::post("authorization", "App\Http\Controllers\AuthorizationController@authorization");
 
 
