@@ -13,6 +13,10 @@ class AuthResponse extends ResponseMessage
 
     public function responseMessage(): array
     {
-        return parent::responseMessage()[]=["token"=>$this->token];
+        return [
+            "success"=>$this->success,
+            "message"=>$this->message,
+            "token"=>$this->token
+        ];
     }
 }

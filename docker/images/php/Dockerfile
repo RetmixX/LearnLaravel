@@ -1,6 +1,8 @@
 
 FROM php:8.1.12-fpm-alpine
 
+COPY ./docker/images/php/php.ini /usr/local/etc/php/conf.d/php.ini
+
 WORKDIR /var/www
 
 

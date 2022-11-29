@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\DTO\ErrorResponse;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
@@ -23,9 +24,8 @@ class AuthorizationRequest extends FormRequest
         }
 
         $errors = substr($errors, 0,-2).". ";
-        throw new HttpResponseException(response()->json([
-            "success"=>false,
-            "message"=>$errors
-        ], 400));
+        throw new HttpResponseException(response()->json(
+            (new ErrorResponse(false, $errors))->responseMessage()
+            , 400));
     }
 }

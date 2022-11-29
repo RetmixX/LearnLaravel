@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\DTO\ErrorResponse;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Exceptions\HttpResponseException;
@@ -35,10 +36,10 @@ class User extends Model
     {
         $user = User::query()->where("email", "=", $email)->first();
         if ($user === null)
-            throw new HttpResponseException(response()->json([
-                "success" => false,
-                "message" => "User with email " . $email . " not found"
-            ]));
+            throw new HttpResponseException(response()->json(
+                (new ErrorResponse(false, "User with email " . $email . " not found"))
+                    ->responseMessage(), 400
+            ));
 
         if (!Hash::check($password, $user->password))
             throw new HttpResponseException(response()->json([
@@ -46,17 +47,20 @@ class User extends Model
                 "message"=>"Invalid password"
             ], 400));
 
-        if (!empty($user->token))
-            throw new HttpResponseException(response()->json([
-                "success"=>false,
-                "message"=>"User already authorization"
-            ], 400));
-
         $token = md5(microtime()."retmix".time());
 
         User::where("email", $email)->update(["token"=>$token]);
 
         return $token;
+    }
+
+    //Если пользователь с переданным токеном не найден, то true, иначе false
+    public static function findUserOnToken(string $token): bool{
+        return User::where("token", $token)->first()===null;
+    }
+
+    public static function logout($token){
+        User::where("token", $token)->update(["token"=>""]);
     }
 
 }

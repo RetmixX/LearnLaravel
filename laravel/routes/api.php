@@ -14,8 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("main", "App\Http\Controllers\RegistrationController@head");
 Route::post("registration", "App\Http\Controllers\RegistrationController@resgistration");
-Route::post("authorization", "App\Http\Controllers\AuthorizationController@authorization");
+Route::post("authorization", [\App\Http\Controllers\AuthorizationController::class, "authorization"])
+    ->middleware("noAuth");
+
+Route::middleware(["checkAuth"])->group(function (){
+   Route::get("logout", [\App\Http\Controllers\LogoutController::class, "logout"]);
+   Route::post("createFolder", [\App\Http\Controllers\TestFileController::class, "createFolder"]);
+   Route::post("createFile", [\App\Http\Controllers\TestFileController::class, "createFile"]);
+});
+
 
 

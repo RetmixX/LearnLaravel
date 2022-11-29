@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\DTO\ErrorResponse;
 use App\Rules\CustomPassword;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
@@ -25,10 +26,9 @@ class RegistrationRequest extends FormRequest
             $errors = $errors.$error.". ";
         }
         $errors = substr($errors, 0,-2).".";
-        throw new HttpResponseException(response()->json([
-            "success"=>false,
-            "message"=>$errors
-        ], 400));
+        throw new HttpResponseException(response()->json(
+            (new ErrorResponse(false, $errors))->responseMessage()
+            , 400));
     }
 
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\DTO\Response;
 use App\Http\Requests\RegistrationRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -22,11 +23,9 @@ class RegistrationController extends Controller
             "last_name"=>$validation["last_name"],
         ]);
 
-        return response([
-            "success"=>true,
-            "message"=>"Registration successful"
-            ],
-            201);
+        return response((new Response
+        (true, "Registration successful"))
+            ->responseMessage(), 201);
     }
 
 }
