@@ -15,6 +15,6 @@ class TestFileController extends Controller
         $nameFile = request()->file()["filename"]->getClientOriginalName();
         echo $nameFile;
         $fileContent = request()->file()["filename"]->getContent();
-        Storage::put("/retmix/".$nameFile, $fileContent);
+        Storage::put($nameFile, $fileContent);
     }
 }

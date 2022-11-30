@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b2dbac3-893a-4547-b8ea-2b547c77cd9b" name="Changes" comment="a">
-      <change beforePath="$PROJECT_DIR$/docker/images/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/images/php/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/images/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/docker/images/php/php.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/AuthResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/DTO/AuthResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/AuthorizationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/AuthorizationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/LogoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/LogoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Requests/AuthorizationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Requests/AuthorizationRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Requests/RegistrationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Requests/RegistrationRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/api.php" afterDir="false" />
+    <list default="true" id="6b2dbac3-893a-4547-b8ea-2b547c77cd9b" name="Changes" comment="test download">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47/storage_v2/_src_/database/retmix.Gx5OyA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47/storage_v2/_src_/database/retmix.Gx5OyA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/TestFileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/TestFileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/2022_11_28_015104_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/database/migrations/1_2022_11_28_015104_users_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,25 +155,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm": "Docker Compose",
-    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm": "Docker Compose",
-    "last_opened_file_path": "C:/Users/kadmin/Desktop/public/ProjectScarpingVK-master",
-    "nodejs_package_manager_path": "npm",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php.debug",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm&quot;: &quot;Docker Compose&quot;,
+    &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm&quot;: &quot;Docker Compose&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kadmin/Desktop/public/ProjectScarpingVK-master&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php.debug&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kadmin\PhpstormProjects\test\laravel\public" />
@@ -231,7 +226,10 @@
       <workItem from="1669273365644" duration="4988000" />
       <workItem from="1669340936774" duration="8653000" />
       <workItem from="1669599949185" duration="24177000" />
-      <workItem from="1669687672185" duration="11199000" />
+      <workItem from="1669687672185" duration="11816000" />
+      <workItem from="1669770866829" duration="2134000" />
+      <workItem from="1669775924241" duration="4106000" />
+      <workItem from="1669784788955" duration="1317000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1669352127557</created>
@@ -240,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669352127558</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test download">
+      <created>1669701873980</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669701873980</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +264,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="test download" />
+    <option name="LAST_COMMIT_MESSAGE" value="test download" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
