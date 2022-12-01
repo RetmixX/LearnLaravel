@@ -2,18 +2,16 @@
 
 namespace App\Http\Requests;
 
-use App\DTO\ErrorResponse;
 use App\DTO\ValidationError\ValidationFiled;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Http\Exceptions\HttpResponseException;
 
-class AuthorizationRequest extends FormRequest
+class CreateFolderRequest extends FormRequest
 {
     public function rules(){
         return [
-            "email"=>"required",
-            "password"=>"required"
+            "name"=>"required",
+            "parent_id"=>"required"
         ];
     }
 

@@ -11,6 +11,13 @@ RUN set -ex \
     postgresql-dev
 
 RUN docker-php-ext-install pdo pdo_pgsql
+
+RUN curl -sSLf \
+            -o /usr/local/bin/install-php-extensions \
+            https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions
+RUN chmod +x /usr/local/bin/install-php-extensions
+
+RUN install-php-extensions xdebug
 COPY ./docker/images/php/php.ini /usr/local/etc/php/conf.d/php.ini
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 

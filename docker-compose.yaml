@@ -10,6 +10,8 @@ services:
       - postgres
     volumes:
       - ./laravel:/var/www
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     networks:
       - retmix
 

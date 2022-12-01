@@ -19,7 +19,9 @@ return new class extends Migration
             $table->text("url");
             $table->string("path", 255);
             $table->integer("author_id");
+            $table->string("folder_id", 10);
             $table->foreign("author_id")->references("id")->on("users")->onDelete("cascade");
+            $table->foreign("folder_id")->references("folder_id")->on("folders")->onDelete("cascade");
         });
     }
 

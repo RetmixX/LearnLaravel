@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.43">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>786</IntrospectionStateNumber>
+      <IntrospectionStateNumber>749</IntrospectionStateNumber>
       <ServerVersion>15.1</ServerVersion>
-      <StartupTime>1669783825</StartupTime>
+      <StartupTime>1669868937</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -806,11 +806,11 @@ false posixrules
 13198||10|C|G
 13198||-9223372036854775808|U|G
 13198||10|U|G</Grants>
-      <IntrospectionStateNumber>786</IntrospectionStateNumber>
+      <IntrospectionStateNumber>749</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
-      <Relations>sequence|table|24619|24620|1
-sequence|table|24626|24627|1
-sequence|table|24636|24637|1
+      <Relations>sequence|table|16389|16390|1
+sequence|table|16396|16397|1
+sequence|table|16406|16407|1
 </Relations>
       <OwnerName>retmix</OwnerName>
     </database>
@@ -4219,251 +4219,404 @@ sequence|table|24636|24637|1
     <schema id="262" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>786</IntrospectionStateNumber>
+      <IntrospectionStateNumber>749</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
     <sequence id="263" parent="262" name="migrations_id_seq">
       <DataType>integer|0s</DataType>
-      <ObjectId>24619</ObjectId>
-      <StateNumber>780</StateNumber>
+      <ObjectId>16389</ObjectId>
+      <StateNumber>738</StateNumber>
       <OwnerName>retmix</OwnerName>
     </sequence>
     <sequence id="264" parent="262" name="personal_access_tokens_id_seq">
       <DataType>bigint|0s</DataType>
-      <ObjectId>24636</ObjectId>
-      <StateNumber>783</StateNumber>
+      <ObjectId>16406</ObjectId>
+      <StateNumber>741</StateNumber>
       <OwnerName>retmix</OwnerName>
     </sequence>
     <sequence id="265" parent="262" name="users_id_seq">
       <DataType>bigint|0s</DataType>
-      <ObjectId>24626</ObjectId>
-      <StateNumber>781</StateNumber>
+      <ObjectId>16396</ObjectId>
+      <StateNumber>739</StateNumber>
       <OwnerName>retmix</OwnerName>
     </sequence>
-    <table id="266" parent="262" name="migrations">
-      <ObjectId>24620</ObjectId>
-      <StateNumber>780</StateNumber>
+    <table id="266" parent="262" name="files">
+      <ObjectId>16430</ObjectId>
+      <StateNumber>745</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>retmix</OwnerName>
     </table>
-    <table id="267" parent="262" name="personal_access_tokens">
-      <ObjectId>24637</ObjectId>
-      <StateNumber>783</StateNumber>
+    <table id="267" parent="262" name="folders">
+      <ObjectId>16418</ObjectId>
+      <StateNumber>743</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>retmix</OwnerName>
     </table>
-    <table id="268" parent="262" name="users">
-      <ObjectId>24627</ObjectId>
-      <StateNumber>781</StateNumber>
+    <table id="268" parent="262" name="migrations">
+      <ObjectId>16390</ObjectId>
+      <StateNumber>738</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>retmix</OwnerName>
     </table>
-    <column id="269" parent="266" name="id">
+    <table id="269" parent="262" name="personal_access_tokens">
+      <ObjectId>16407</ObjectId>
+      <StateNumber>741</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>retmix</OwnerName>
+    </table>
+    <table id="270" parent="262" name="users">
+      <ObjectId>16397</ObjectId>
+      <StateNumber>743</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>retmix</OwnerName>
+    </table>
+    <column id="271" parent="266" name="file_id">
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>745</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="272" parent="266" name="name">
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>745</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="273" parent="266" name="url">
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>745</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="274" parent="266" name="path">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>745</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="275" parent="266" name="author_id">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>745</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="276" parent="266" name="folder_id">
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>745</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="277" parent="266" name="files_author_id_foreign">
+      <ColNames>author_id</ColNames>
+      <ObjectId>16435</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>745</StateNumber>
+      <RefTableId>16397</RefTableId>
+      <RefTableName>users</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <foreign-key id="278" parent="266" name="files_folder_id_foreign">
+      <ColNames>folder_id</ColNames>
+      <ObjectId>16440</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>folder_id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>745</StateNumber>
+      <RefTableId>16418</RefTableId>
+      <RefTableName>folders</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="279" parent="266" name="files_pkey">
+      <ColNames>file_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16445</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>745</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="280" parent="266" name="files_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16446</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>745</StateNumber>
+      <UnderlyingIndexId>16445</UnderlyingIndexId>
+    </key>
+    <column id="281" parent="267" name="folder_id">
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>743</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="282" parent="267" name="name">
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>743</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="283" parent="267" name="parent_id">
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>743</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="284" parent="267" name="author_id">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>743</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="285" parent="267" name="folders_author_id_foreign">
+      <ColNames>author_id</ColNames>
+      <ObjectId>16423</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>743</StateNumber>
+      <RefTableId>16397</RefTableId>
+      <RefTableName>users</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="286" parent="267" name="folders_pkey">
+      <ColNames>folder_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16428</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>743</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="287" parent="267" name="folders_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16429</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>743</StateNumber>
+      <UnderlyingIndexId>16428</UnderlyingIndexId>
+    </key>
+    <column id="288" parent="268" name="id">
       <DataType>integer|0s</DataType>
       <DefaultExpression>nextval(&apos;migrations_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>780</StateNumber>
+      <StateNumber>738</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="270" parent="266" name="migration">
+    <column id="289" parent="268" name="migration">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>780</StateNumber>
+      <StateNumber>738</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="271" parent="266" name="batch">
+    <column id="290" parent="268" name="batch">
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>780</StateNumber>
+      <StateNumber>738</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="272" parent="266" name="migrations_pkey">
+    <index id="291" parent="268" name="migrations_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24624</ObjectId>
+      <ObjectId>16394</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>780</StateNumber>
+      <StateNumber>738</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="273" parent="266" name="migrations_pkey">
+    <key id="292" parent="268" name="migrations_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24625</ObjectId>
+      <ObjectId>16395</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>780</StateNumber>
-      <UnderlyingIndexId>24624</UnderlyingIndexId>
+      <StateNumber>738</StateNumber>
+      <UnderlyingIndexId>16394</UnderlyingIndexId>
     </key>
-    <column id="274" parent="267" name="id">
+    <column id="293" parent="269" name="id">
       <DataType>bigint|0s</DataType>
       <DefaultExpression>nextval(&apos;personal_access_tokens_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="275" parent="267" name="tokenable_type">
+    <column id="294" parent="269" name="tokenable_type">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="276" parent="267" name="tokenable_id">
+    <column id="295" parent="269" name="tokenable_id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="277" parent="267" name="name">
+    <column id="296" parent="269" name="name">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="278" parent="267" name="token">
+    <column id="297" parent="269" name="token">
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="279" parent="267" name="abilities">
+    <column id="298" parent="269" name="abilities">
       <DataType>text|0s</DataType>
       <Position>6</Position>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="280" parent="267" name="last_used_at">
+    <column id="299" parent="269" name="last_used_at">
       <DataType>timestamp(0)|0s</DataType>
       <Position>7</Position>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="281" parent="267" name="expires_at">
+    <column id="300" parent="269" name="expires_at">
       <DataType>timestamp(0)|0s</DataType>
       <Position>8</Position>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="282" parent="267" name="created_at">
+    <column id="301" parent="269" name="created_at">
       <DataType>timestamp(0)|0s</DataType>
       <Position>9</Position>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="283" parent="267" name="updated_at">
+    <column id="302" parent="269" name="updated_at">
       <DataType>timestamp(0)|0s</DataType>
       <Position>10</Position>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="284" parent="267" name="personal_access_tokens_pkey">
+    <index id="303" parent="269" name="personal_access_tokens_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24643</ObjectId>
+      <ObjectId>16413</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>783</StateNumber>
+      <StateNumber>741</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="285" parent="267" name="personal_access_tokens_token_unique">
+    <index id="304" parent="269" name="personal_access_tokens_token_unique">
       <ColNames>token</ColNames>
-      <ObjectId>24646</ObjectId>
-      <StateNumber>783</StateNumber>
+      <ObjectId>16416</ObjectId>
+      <StateNumber>741</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <index id="286" parent="267" name="personal_access_tokens_tokenable_type_tokenable_id_index">
+    <index id="305" parent="269" name="personal_access_tokens_tokenable_type_tokenable_id_index">
       <ColNames>tokenable_type
 tokenable_id</ColNames>
-      <ObjectId>24645</ObjectId>
-      <StateNumber>783</StateNumber>
+      <ObjectId>16415</ObjectId>
+      <StateNumber>741</StateNumber>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="287" parent="267" name="personal_access_tokens_pkey">
+    <key id="306" parent="269" name="personal_access_tokens_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24644</ObjectId>
+      <ObjectId>16414</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>783</StateNumber>
-      <UnderlyingIndexId>24643</UnderlyingIndexId>
+      <StateNumber>741</StateNumber>
+      <UnderlyingIndexId>16413</UnderlyingIndexId>
     </key>
-    <key id="288" parent="267" name="personal_access_tokens_token_unique">
-      <ObjectId>24647</ObjectId>
-      <StateNumber>783</StateNumber>
-      <UnderlyingIndexId>24646</UnderlyingIndexId>
+    <key id="307" parent="269" name="personal_access_tokens_token_unique">
+      <ObjectId>16417</ObjectId>
+      <StateNumber>741</StateNumber>
+      <UnderlyingIndexId>16416</UnderlyingIndexId>
     </key>
-    <column id="289" parent="268" name="id">
+    <column id="308" parent="270" name="id">
       <DataType>bigint|0s</DataType>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>781</StateNumber>
+      <StateNumber>739</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="290" parent="268" name="email">
+    <column id="309" parent="270" name="email">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>781</StateNumber>
+      <StateNumber>739</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="291" parent="268" name="password">
+    <column id="310" parent="270" name="password">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>781</StateNumber>
+      <StateNumber>739</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="292" parent="268" name="first_name">
+    <column id="311" parent="270" name="first_name">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>781</StateNumber>
+      <StateNumber>739</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="293" parent="268" name="last_name">
+    <column id="312" parent="270" name="last_name">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>781</StateNumber>
+      <StateNumber>739</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="294" parent="268" name="token">
+    <column id="313" parent="270" name="token">
       <DataType>varchar(200)|0s</DataType>
       <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>6</Position>
-      <StateNumber>781</StateNumber>
+      <StateNumber>739</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="295" parent="268" name="users_pkey">
+    <index id="314" parent="270" name="users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24634</ObjectId>
+      <ObjectId>16404</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>781</StateNumber>
+      <StateNumber>739</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="296" parent="268" name="users_pkey">
+    <key id="315" parent="270" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24635</ObjectId>
+      <ObjectId>16405</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>781</StateNumber>
-      <UnderlyingIndexId>24634</UnderlyingIndexId>
+      <StateNumber>739</StateNumber>
+      <UnderlyingIndexId>16404</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

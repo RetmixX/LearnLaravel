@@ -25,6 +25,14 @@ class User extends Model
     public $incrementing = false;
     public $table = "users";
 
+    public function folders(){
+        return $this->hasMany(Folder::class, "author_id");
+    }
+
+    public function files(){
+        return $this->hasMany(File::class, "author_id");
+    }
+
     public $fillable = [
         "email",
         "password",
@@ -54,10 +62,19 @@ class User extends Model
         return $token;
     }
 
-    //Если пользователь с переданным токеном не найден, то true, иначе false
+    //Если у пользователя нету токена, то вернется true, иначе false
+    public static function findUserOnEmail(string $email): bool{
+        $user = User::where("email", $email)->first();
+        if (empty($user->token) || $user == null)
+            return true;
+
+        else return false;
+    }
+
     public static function findUserOnToken(string $token): bool{
         return User::where("token", $token)->first()===null;
     }
+
 
     public static function logout($token){
         User::where("token", $token)->update(["token"=>""]);

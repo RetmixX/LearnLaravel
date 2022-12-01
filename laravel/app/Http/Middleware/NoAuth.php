@@ -19,14 +19,8 @@ class NoAuth
      */
     public function handle(Request $request, Closure $next)
     {
-        $token = $request->header("token")??"";
 
-        if (empty($token))
-            throw new HttpResponseException(response()->json(
-                (new ErrorResponse(false, "Token is empty"))->responseMessage()
-                ,400));
-
-        if (User::findUserOnToken($token))
+        if (User::findUserOnEmail($request["email"]))
             return $next($request);
         else
             throw new HttpResponseException(response()->json(

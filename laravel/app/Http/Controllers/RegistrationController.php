@@ -13,7 +13,7 @@ class RegistrationController extends Controller
         return response()->json(["message"=>"Test"]);
     }
 
-    public function resgistration(RegistrationRequest $request){
+    public function registration(RegistrationRequest $request){
         $validation = $request->validated();
 
         $user = User::create([
