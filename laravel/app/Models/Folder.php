@@ -56,6 +56,10 @@ class Folder extends Model
         $test = 1;
     }
 
+    private static function recursiveDelete(Folder $folder){
+        
+    }
+
     //Если такая папка существует в разделе, то true, иначе false
     private static function folderExist(array $folders, string $name, User $user):bool{
         foreach ($folders as $folder){
