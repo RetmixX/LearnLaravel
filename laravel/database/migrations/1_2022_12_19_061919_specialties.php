@@ -13,12 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create("folders", function (Blueprint $table){
-            $table->string("folder_id", 10)->primary();
-            $table->text("name");
-            $table->text("parent_id");
-            $table->integer("author_id");
-            $table->foreign("author_id")->references("id")->on("users")->onDelete("cascade");
+        Schema::create("specialties", function (Blueprint $table){
+            $table->id();
+            $table->string("name");
         });
     }
 

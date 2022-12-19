@@ -13,13 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create("users", function (Blueprint $table){
-           $table->id();
-           $table->string("email", 100);
-           $table->string("password", 100);
-           $table->string("first_name", 100);
-           $table->string("last_name", 100);
-           $table->string("token", 200)->default("");
+        Schema::create("cluster_members", function (Blueprint $table){
+            $table->id();
+            $table->string("title");
+            $table->string("about");
+            $table->string("logo");
+            $table->float("rating");
+            $table->string("type");
+            $table->boolean("confirmed");
+            $table->string("email");
+            $table->string("phone");
         });
     }
 
