@@ -2,82 +2,43 @@
 
 namespace App\Models;
 
-use App\DTO\ErrorResponse;
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Http\Exceptions\HttpResponseException;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
-
-/**
- * @property $id
- * @property $email
- * @property $password
- * @property $first_name
- * @property $last_name
- * @property $token
- */
-class User extends Model
+class User extends Authenticatable
 {
-    use HasFactory;
+    use HasApiTokens, HasFactory, Notifiable;
 
-    public $timestamps = false;
-    public $incrementing = false;
-    public $table = "users";
-
-    public function folders(){
-        return $this->hasMany(Folder::class, "author_id");
-    }
-
-    public function files(){
-        return $this->hasMany(File::class, "author_id");
-    }
-
-    public $fillable = [
-        "email",
-        "password",
-        "first_name",
-        "last_name",
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
     ];
 
-    public static function check($email, $password): string
-    {
-        $user = User::query()->where("email", "=", $email)->first();
-        if ($user === null)
-            throw new HttpResponseException(response()->json(
-                (new ErrorResponse(false, "User with email " . $email . " not found"))
-                    ->responseMessage(), 400
-            ));
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array<int, string>
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
 
-        if (!Hash::check($password, $user->password))
-            throw new HttpResponseException(response()->json([
-                "success"=>false,
-                "message"=>"Invalid password"
-            ], 400));
-
-        $token = md5(microtime()."retmix".time());
-
-        User::where("email", $email)->update(["token"=>$token]);
-
-        return $token;
-    }
-
-    //Если у пользователя нету токена, то вернется true, иначе false
-    public static function findUserOnEmail(string $email): bool{
-        $user = User::where("email", $email)->first();
-        if (empty($user->token) || $user == null)
-            return true;
-
-        else return false;
-    }
-
-    public static function findUserOnToken(string $token): bool{
-        return User::where("token", $token)->first()===null;
-    }
-
-
-    public static function logout($token){
-        User::where("token", $token)->update(["token"=>""]);
-    }
-
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
 }

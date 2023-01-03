@@ -1,11 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6b2dbac3-893a-4547-b8ea-2b547c77cd9b" name="Changes" comment="test download">
+      <change afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47/storage_v2/_src_/database/retmix.Gx5OyA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47/storage_v2/_src_/database/retmix.Gx5OyA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Models/Folder.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Models/Folder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/images/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/docker/images/php/php.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/AuthResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/CreateFolderResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/ErrorResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/Response.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/ResponseMessage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/ValidationError/ValidationFiled.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/AuthorizationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/FileController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/FolderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/LogoutController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/RegistrationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/TestFileController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Middleware/Auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Middleware/NoAuth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Requests/AuthorizationRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Requests/CreateFolderRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Requests/RegistrationRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Models/File.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Models/Folder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Rules/CustomPassword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Tools/IdGenerate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/artisan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/1_2022_11_28_015104_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/2_2022_11_30_044126_folders.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/3_2022_11_30_044043_files.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/storage/uploads/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/storage/uploads/сыч.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +61,25 @@
       <interpreter composer="composer" />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="HTTP Public Environment File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+    <file url="file://$PROJECT_DIR$/testsAPI/get-hello.http" environment="dev" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="5ee471d0-c73a-45ad-9952-8e1511134bdc" name="Unnamed" use_path_mappings="true">
@@ -153,45 +208,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm&quot;: &quot;Docker Compose&quot;,
-    &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm&quot;: &quot;Docker Compose&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kadmin/Desktop/public/ProjectScarpingVK-master&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.php.debug.servers&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Constants": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.laravel-idea.search-composer-json": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm": "Docker Compose",
+    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm": "Docker Compose",
+    "last_opened_file_path": "/home/retmix/Рабочий стол/IT-cluster-platform-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "rest.client.default.execution.environment": "dev",
+    "settings.editor.selected.configurable": "settings.php.debug.servers",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kadmin\PhpstormProjects\test\laravel\public" />
       <recent name="C:\Users\kadmin\PhpstormProjects\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yaml: Compose Deployment">
+  <component name="RunManager" selected="HTTP Request.get-hello | #2">
+    <configuration name="get-hello | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/testsAPI/get-hello.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="get-hello | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/testsAPI/get-hello.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="post-requests | Send request with dynamic variables in request's body" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" index="4" requestIdentifier="Send request with dynamic variables in request's body" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="sourceFilePath" value="docker-compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="nginx/dev.Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="contextFolderPath" value="$PROJECT_DIR$" />
-          <option name="sourceFilePath" value="docker/images/nginx/dev.Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
@@ -206,9 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.get-hello | #2" />
+        <item itemvalue="HTTP Request.get-hello | #1" />
+        <item itemvalue="HTTP Request.post-requests | Send request with dynamic variables in request's body" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
         <item itemvalue="Docker.php/Dockerfile" />
-        <item itemvalue="Docker.nginx/dev.Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -230,6 +294,7 @@
       <workItem from="1669784788955" duration="1317000" />
       <workItem from="1669858766738" duration="15811000" />
       <workItem from="1669945982913" duration="4658000" />
+      <workItem from="1672712275761" duration="18271000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1669352127557</created>
