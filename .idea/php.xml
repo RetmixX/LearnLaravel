@@ -119,6 +119,7 @@
       <path value="$PROJECT_DIR$/laravel/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/laravel/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/laravel/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/laravel/vendor/doctrine/deprecations" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

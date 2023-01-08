@@ -5,50 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b2dbac3-893a-4547-b8ea-2b547c77cd9b" name="Changes" comment="test download">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47/storage_v2/_src_/database/retmix.Gx5OyA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc6f0f84-785d-4a1f-a31f-3e8854f04e47/storage_v2/_src_/database/retmix.Gx5OyA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/images/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/docker/images/php/php.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/AuthResponse.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/CreateFolderResponse.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/ErrorResponse.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/Response.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/ResponseMessage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/DTO/ValidationError/ValidationFiled.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/AuthorizationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/FileController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/FolderController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/LogoutController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/RegistrationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/TestFileController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Middleware/Auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Middleware/NoAuth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Requests/AuthorizationRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Requests/CreateFolderRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Requests/RegistrationRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Models/File.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Models/Folder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Rules/CustomPassword.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Tools/IdGenerate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/artisan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/1_2022_11_28_015104_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/2_2022_11_30_044126_folders.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/3_2022_11_30_044043_files.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/storage/uploads/cat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/storage/uploads/сыч.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +157,7 @@
       <path value="$PROJECT_DIR$/laravel/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/laravel/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/laravel/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/laravel/vendor/doctrine/deprecations" />
     </include_path>
   </component>
   <component name="ProjectId" id="2HyzKvhVvLGTDElCoLazkGg7HQr" />
@@ -208,32 +166,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Constants": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.laravel-idea.search-composer-json": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm": "Docker Compose",
-    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm": "Docker Compose",
-    "last_opened_file_path": "/home/retmix/Рабочий стол/IT-cluster-platform-main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "rest.client.default.execution.environment": "dev",
-    "settings.editor.selected.configurable": "settings.php.debug.servers",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Constants&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm&quot;: &quot;Docker Compose&quot;,
+    &quot;credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm&quot;: &quot;Docker Compose&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/retmix/PhpstormProjects/IT-cluster-platform&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.php.debug.servers&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kadmin\PhpstormProjects\test\laravel\public" />
@@ -295,6 +253,7 @@
       <workItem from="1669858766738" duration="15811000" />
       <workItem from="1669945982913" duration="4658000" />
       <workItem from="1672712275761" duration="18271000" />
+      <workItem from="1672793929395" duration="7130000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1669352127557</created>

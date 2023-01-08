@@ -14,15 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post("registration", [\App\Http\Controllers\RegistrationController::class, "registration"]);
-Route::post("authorization", [\App\Http\Controllers\AuthorizationController::class, "authorization"])
-    ->middleware("noAuth");
-
-Route::middleware(["checkAuth"])->group(function (){
-   Route::get("logout", [\App\Http\Controllers\LogoutController::class, "logout"]);
-   Route::post("folders", [\App\Http\Controllers\FolderController::class, "createFolder"]);
-   Route::get("folders/{folder_id}", [\App\Http\Controllers\FolderController::class, "deleteFolder"]);
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
 });
 
+Route::get("/hello", function (){
+    return "hello";
+});
 
-
+Route::get("/t", function (Request $request){
+   return $request;
+});
